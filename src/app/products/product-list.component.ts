@@ -36,6 +36,10 @@ export class ProductListComponent implements OnInit {
         this.imageShown = !this.imageShown;
     }
 
+    onRatingClicked(message: string): void {
+        this.pageTitle = `Product List: ${message}`;
+    }
+
     public get listFilter(): string {
         return this._listFilter;
     }
